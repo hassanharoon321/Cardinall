@@ -1,0 +1,4 @@
+POST http://localhost:8800/authenticate 
+Content-Type: application/json
+
+{ "username": "james"}
