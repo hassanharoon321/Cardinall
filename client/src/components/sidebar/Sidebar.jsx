@@ -25,30 +25,36 @@ export default function Sidebar() {
            <span className="sidebarListItemText">Feed</span>
          </li>
          <li className="sidebarListItem">
-           <Chat className="sidebarIcon" />
-           <span className="sidebarListItemText">Chats</span>
-         </li>
-         <li className="sidebarListItem">
           <Link to="/reels" className="sidebarLink">
            <PlayCircleFilledOutlined className="sidebarIcon" />
-           <span className="sidebarListItemText">Videos</span>
+           <span className="sidebarListItemText">Reels</span>
            </Link>
          </li>
+         <li className="sidebarListItem">
+          <Link to="/marketplace" className="sidebarLink">
+           <Chat className="sidebarIcon" />
+           <span className="sidebarListItemText">Marketplace</span>
+           </Link>
+         </li>
+       
          <li className="sidebarListItem">
          <Link to="/groups" className="sidebarLink">
            <Group className="sidebarIcon" />
            <span className="sidebarListItemText">Groups</span>
            </Link>
          </li>
+        
+         <li className="sidebarListItem">
+           <HelpOutline className="sidebarIcon" />
+           <Link to="/vpn" className="sidebarLink">
+           <span className="sidebarListItemText">Free VPN </span>
+        </Link>
+         </li>
          <li className="sidebarListItem">
            <Bookmark className="sidebarIcon" />
            <Link to="/todo" className="sidebarLink">
            <span className="sidebarListItemText">To Do List</span>
            </Link>
-         </li>
-         <li className="sidebarListItem">
-           <HelpOutline className="sidebarIcon" />
-           <span className="sidebarListItemText">Questions</span>
          </li>
          <li className="sidebarListItem">
            <WorkOutline className="sidebarIcon" />

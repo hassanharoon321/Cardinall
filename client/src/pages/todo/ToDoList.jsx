@@ -12,7 +12,7 @@ const TodoPage = () => {
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  })
+  },[todos]);
 
   return (
     <div className="container">

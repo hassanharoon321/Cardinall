@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const TodosList = ({ todos, setTodos, setEditTodo }) => {
 
@@ -35,14 +37,16 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
               
                     <div>
                         <button className="button-complete task-button" onClick={() => handleComplete(todo)}>
-                            <i className="fa fa-check-circle"></i>
+                        <FontAwesomeIcon icon={faCheckCircle} />
+
                         </button>
                         <button className="button-edit task-button" onClick={() => handleEdit(todo)}>
-                            <i className="fa fa-edit"></i>
+                        <FontAwesomeIcon icon={faEdit} />
+
                         </button>
                         <button className="button-delete task-button" onClick={() => handleDelete(todo)}> 
-                            <i className="fa fa-trash"></i>
-                        </button>
+   <FontAwesomeIcon icon={faTrash} />
+                           </button>
                     </div>  
                 </li>
             ))}

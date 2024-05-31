@@ -6,6 +6,8 @@ import Crypto from "./pages/crypto/Crypto";
 import Groups from "./pages/groups/Groups"; 
 import ChatsPage from "./pages/groups/ChatsPage";
 import ToDoList from "./pages/todo/ToDoList";
+import Marketplace from "./pages/marketplace/Marketplace";
+import Vpn from "./pages/vpn/Vpn";
 
 import {
   BrowserRouter as Router,
@@ -42,6 +44,12 @@ function App() {
         </Route>
         <Route path="/todo">
           <ToDoList /> 
+       </Route>
+       <Route path="/marketplace">
+          <Marketplace /> 
+       </Route>
+       <Route path="/vpn">
+          <Vpn /> 
        </Route>
       </Switch>
     </Router>
