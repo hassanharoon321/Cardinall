@@ -17,16 +17,15 @@ dotenv.config();
 //b7gkD9wNI1j4BYpn
 //middleware
 
-const uri =
-  "mongodb+srv://CardinalAdmin:b7gkD9wNI1j4BYpn@cardinaldatabase.pav6uxd.mongodb.net/CardinalDataBase?retryWrites=true&w=majority";
+// const uri =
+//   "mongodb+srv://CardinalAdmin:b7gkD9wNI1j4BYpn@cardinaldatabase.pav6uxd.mongodb.net/CardinalDataBase?retryWrites=true&w=majority";
+
+  const uri =
+  "mongodb://localhost:27017/something";
+
 
 mongoose
-  .connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 5000, // Adjust as needed
-    socketTimeoutMS: 45000, // Adjust as needed
-  })
+  .connect(uri)
   .then(() => {
     console.log("Connected to MongoDB");
   })
